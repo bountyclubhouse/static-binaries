@@ -25,6 +25,6 @@ jobs:
       - name: Fossa init
         run: fossa init
       - name: Upload dependencies
-        run: fossa test
+        run: fossa analyze
         env:
           FOSSA_API_KEY: ${{ secrets.FOSSA_API_KEY }}
